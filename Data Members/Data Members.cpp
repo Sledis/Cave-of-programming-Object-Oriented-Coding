@@ -3,17 +3,12 @@
 using namespace std;  
 
 int main() {
-	Cat ishi;
+	cout << "Starting program ..." << endl;
 
-	ishi.makeHappy();
-	ishi.speak();
-
-	Cat wren;
-	wren.makeSad();
-	wren.speak();
-
-
-
-
+	{
+		Cat ishi;
+		ishi.speak();
+	}
+	cout << "Ending program ..." << endl;
 	return 0;
 }

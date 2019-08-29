@@ -3,6 +3,19 @@
 
 using namespace std;
 
+//Constructor
+Cat::Cat() {
+	cout << "Cat created." << endl;
+
+	happy = true;
+}
+
+//Destructor
+Cat::~Cat() {
+	cout << "Cat destroyed." << endl;
+}
+
+
 void Cat::speak() {
 	if (happy) {
 		cout << "Meow" << endl;
@@ -11,11 +24,4 @@ void Cat::speak() {
 		cout << "Hsssss" << endl;
 	}
 
-}
-void Cat::makeHappy() {
-	happy = true;
-}
-
-void Cat::makeSad() {
-	happy = false;
 }
